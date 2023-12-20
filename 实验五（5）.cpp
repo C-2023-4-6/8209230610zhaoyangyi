@@ -1,17 +1,19 @@
 #include<iostream>
 using namespace std;
-class Point 
+class Point
 {
 private:
-	int x;int y;
+	int x; int y;
 public:
-	Point(int x = 60, int y = 80)
+	Point()
 	{
+		x = 60;
+		y = 80;
 	}
 	void setPoint(int i, int j)
 	{
-		x =60+ i;
-		y =80+ j;
+		this->x = x + i;
+		this->y = y + j;
 	}
 	void display()
 	{
